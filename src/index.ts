@@ -1,6 +1,8 @@
 import { GraphStore } from './graph.js';
 import type { KnowledgeGraph } from './types.js';
 
+export { extractGraph } from './extractor.js';
+
 export function buildGraphFromRelations(
   relations: Array<{ source: string; relation: string; target: string }>
 ): KnowledgeGraph {
